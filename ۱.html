@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NasserLingua</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&family=Poppins&display=swap" rel="stylesheet">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js').then(() => {
+        console.log("✅ Service Worker Registered");
+      });
+    }
+  </script>
+</head>
+<body>
+  <div id="intro">
+    <h1>🚀 Welcome to NasserLingua</h1>
+    <p>جایی که زبان با عشق یاد گرفته می‌شه 💚📚</p>
+    <button onclick="location.href='game.html'">🎮 شروع بازی</button>
+    <button onclick="location.href='grammar.html'">📘 آموزش گرامر</button>
+    <button onclick="location.href='slang.html'">🗯️ اصطلاحات عامیانه</button>
+  </div>
+</body>
+</html>
